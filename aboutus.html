@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -27,7 +30,7 @@
 
     <div>
         <div>
-            <div>
+            <div class ="col">
                 <h2>About Us</h2>
                 <hr />
             </div>
@@ -81,6 +84,12 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
