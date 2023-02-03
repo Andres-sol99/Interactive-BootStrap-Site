@@ -20,9 +20,6 @@
 <body>
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="col">
-            <a button="button" bg-info>Reserve a Campsite</a>
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
@@ -31,6 +28,9 @@
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col-4-md col-2-xl">
+                    <a type="button" class="btn btn-info btn-large" id="reserveForm">Reserve a Campsite</a>
                 </div>
             </div>
         </div>
@@ -142,27 +142,23 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row">
+                                <label>Number of Campers</label>
                                 <div class="col-sm-6">
-                                    <label>Number of Campers</label>
-                                        <div class="col-sm-6">
-                                            <select name="numCampers" id="numCampers">
-                                                <option>Select...</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                            </select>
-                                        </div>
+                                    <select name="numCampers" id="numCampers">
+                                        <option>Select...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <label for="date">Date</label>
-                                    <div>
-                                        <input type="date" id="date" name="date" placeholder="date">
-                                    </div>
+                                <label for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="date">
                                 </div>
                             </div>
                             <div class="row">
